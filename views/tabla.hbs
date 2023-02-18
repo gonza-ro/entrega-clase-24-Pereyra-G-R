@@ -1,0 +1,32 @@
+{{#if productos.length}}
+  
+  <div  class="table-responsive">
+    <table action="/tabla" class="table table-dark">
+      <tr style="color: rgb(66, 61, 135);">
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Url</th>
+      </tr>
+      {{#each .generar}}
+        <tr>
+          <td>{{id}}</td>
+          <td>{{nombre}}</td>
+          <td>{{precio}}</td>
+          <td>{{url}}</td>
+        </tr>
+      {{/each}}
+    </table>
+
+    <div>
+      
+    </div>
+  </div>
+{{else}}
+  <h3 class="alert alert-danger">No se encontraron datos</h3>
+{{/if}}
+<button
+        onclick={window.location.replace("/")}
+        type="button"
+        class="btn btn-success"
+      >Volver</button>

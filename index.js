@@ -1,19 +1,19 @@
-const express = require('express');
+/* const express = require('express');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 
-const app = express();
+const app = express(); */
 
 /* Persistencia por REDIS database */
-const redis = require('redis');
+/* const redis = require('redis');
 const client = redis.createClient();
 const RedisStore = require('connect-redis')(session);
 
 app.use(cookieParser());
 
-app.use(session)({
+app.use(session)({ */
     /* persistencia por redis database */
-    store: new RedisStore({
+   /*  store: new RedisStore({
         host: 'localhost',
         port: 3306,
         client: client,
@@ -21,8 +21,9 @@ app.use(session)({
     }),
     secret: 'hola mundo',
     resave: false,
-    saveUninitialized: false /* ,
+    saveUninitialized: false  */
+    /* ,
     cookie: {
         maxAge: 40000 
     }*/
-})
+/* }) */
