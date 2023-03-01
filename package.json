@@ -1,22 +1,36 @@
 {
   "type": "module",
-  "name": "expresshandlebars",
+  "name": "entrega-clase-24-login-por-formulario",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@faker-js/faker": "7.6.0",
-    "bootstrap": "5.2.3",
-    "express": "4.18.2",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
     "express-handlebars": "^6.0.7",
-    "faker": "6.6.6",
-    "nodemon": "2.0.20"
-  }
+    "express-session": "^1.17.3",
+    "faker": "^6.6.6",
+    "knex": "^2.4.2",
+    "mongoose": "^7.0.0",
+    "mysql": "^2.18.1",
+    "normalizr": "^3.6.2",
+    "socket.io": "^4.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonza-ro/entrega-clase-24-Pereyra-G-R.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gonza-ro/entrega-clase-24-Pereyra-G-R/issues"
+  },
+  "homepage": "https://github.com/gonza-ro/entrega-clase-24-Pereyra-G-R#readme",
+  "description": ""
 }
